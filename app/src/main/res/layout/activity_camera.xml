@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tut.camera.CameraActivity">
+
+    <tut.camera.view.CameraView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/switch_cameras_btn"
+        android:layout_width="@dimen/button_size_small"
+        android:layout_height="@dimen/button_size_small"
+        android:layout_marginRight="@dimen/button_margin"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/button_margin"
+        android:background="@drawable/ic_rotate_camera"/>
+
+    <Button
+        android:id="@+id/switch_flash_btn"
+        android:layout_width="@dimen/button_size_small"
+        android:layout_height="@dimen/button_size_small"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/button_margin"
+        android:layout_marginTop="@dimen/button_margin"
+        android:background="@drawable/ic_flash_off"
+        android:layout_below="@+id/switch_cameras_btn"/>
+
+    <Button
+        android:id="@+id/take_photo_btn"
+        android:layout_width="@dimen/button_size_big"
+        android:layout_height="@dimen/button_size_big"
+        android:layout_margin="@dimen/button_margin"
+        android:background="@drawable/ic_camera_shutter"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:visibility="gone"
+        android:layout_width="@dimen/button_size_small"
+        android:layout_height="@dimen/button_size_small"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/take_photo_btn"
+        android:background="@drawable/ic_cancel"/>
+
+    <Button
+        android:id="@+id/ok_btn"
+        android:visibility="gone"
+        android:layout_width="@dimen/button_size_small"
+        android:layout_height="@dimen/button_size_small"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/button_margin"
+        android:layout_above="@id/cancel_btn"
+        android:background="@drawable/ic_ok"/>
+
+</RelativeLayout>

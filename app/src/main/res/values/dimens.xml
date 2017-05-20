@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_size_small">48dp</dimen>
+    <dimen name="button_margin">12dp</dimen>
+    <dimen name="button_size_big">64dp</dimen>
+</resources>
